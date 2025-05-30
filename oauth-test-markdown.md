@@ -13,38 +13,6 @@
 
 ---
 
-## OpenAPI 3.0: Опис securitySchemes
-
-```yaml
-components:
-  securitySchemes:
-    keycloakOAuth2:
-      type: oauth2
-      flows:
-        authorizationCode:
-          authorizationUrl: http://localhost:8080/realms/Sofa/protocol/openid-connect/auth
-          tokenUrl: http://localhost:8080/realms/Sofa/protocol/openid-connect/token
-          scopes:
-            openid: OpenID Connect scope
-        implicit:
-          authorizationUrl: http://localhost:8080/realms/Sofa/protocol/openid-connect/auth
-          scopes:
-            openid: OpenID Connect scope
-        password:
-          tokenUrl: http://localhost:8080/realms/Sofa/protocol/openid-connect/token
-          scopes:
-            openid: OpenID Connect scope
-        clientCredentials:
-          tokenUrl: http://localhost:8080/realms/Sofa/protocol/openid-connect/token
-          scopes:
-            openid: OpenID Connect scope
-
-security:
-  - keycloakOAuth2: [openid]
-```
-
----
-
 ## Authorization Code Flow
 
 **Postman**  

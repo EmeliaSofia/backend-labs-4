@@ -41,6 +41,7 @@ components:
 
 security:
   - keycloakOAuth2: [openid]
+```yaml
 
 #Authorization Code Flow
 
